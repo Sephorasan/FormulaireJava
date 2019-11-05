@@ -9,6 +9,7 @@ import javafx.scene.text.Text;
 
 public class ViewConnexion {
     private Group root;
+    private Button connexion;
     private Text Connexion;
     private Label PseudoLabel;
     private TextField PseudoField;
@@ -43,7 +44,6 @@ public class ViewConnexion {
         BoutonConnexion = new Button("Connexion");
         BoutonConnexion.setLayoutX(150);
         BoutonConnexion.setLayoutY(650);
-        //BoutonConnexion.setOnAction(event -> );
     }
 
     void setVueConnexion() {
@@ -53,5 +53,9 @@ public class ViewConnexion {
         root.getChildren().add(MDPLabel);
         root.getChildren().add(MDPField);
         root.getChildren().add(BoutonConnexion);
+    }
+
+    public Button getConnexion() {
+        return connexion;
     }
 }

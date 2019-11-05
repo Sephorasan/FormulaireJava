@@ -4,15 +4,18 @@ package View;
 import Controller.ControllerInscription;
 import Main.Formulaire;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 
 public class ViewInscription {
     private Group root;
+    private Button inscription;
     private Text Inscription;
     private Button BoutonEnvoye;
     private Label NomLabel;
@@ -118,4 +121,13 @@ public class ViewInscription {
         root.getChildren().add(MDPField);
         root.getChildren().add(BoutonEnvoye);
     }
+
+    void setEvents(ControllerInscription ci) {
+        BoutonEnvoye.setOnMouseClicked(ci);
+    }
+
+    public Button getInscription() {
+        return inscription;
+    }
+
 }

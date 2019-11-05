@@ -41,7 +41,6 @@ public class ViewHandler extends Application {
 
           */
 
-
         AffichInscription();
         primaryStage.setTitle("Formulaire");
         primaryStage.setFullScreen(true);
@@ -76,5 +75,8 @@ public class ViewHandler extends Application {
     public ViewInformation getVf() { return vf; }
     }
     */
+    public void setEventHandlerInscription(ControllerInscription ci) {
+        vi.setEvents(ci);
+    }
 }
 
