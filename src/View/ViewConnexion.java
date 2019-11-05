@@ -1,5 +1,6 @@
 package View;
 
+import Controller.ControllerConnexion;
 import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -46,7 +47,7 @@ public class ViewConnexion {
         BoutonConnexion.setLayoutY(650);
     }
 
-    void setVueConnexion() {
+    void setVueConnexion(){
         root.getChildren().clear();
         root.getChildren().add(PseudoLabel);
         root.getChildren().add(PseudoField);
@@ -54,8 +55,12 @@ public class ViewConnexion {
         root.getChildren().add(MDPField);
         root.getChildren().add(BoutonConnexion);
     }
+    void setEvents(ControllerConnexion cc){
+        BoutonConnexion.setOnMouseClicked(cc);
+    }
 
     public Button getConnexion() {
-        return connexion;
+        return BoutonConnexion;
     }
+
 }

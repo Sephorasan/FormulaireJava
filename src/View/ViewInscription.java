@@ -127,7 +127,7 @@ public class ViewInscription {
     }
 
     public Button getInscription() {
-        return inscription;
+        return BoutonEnvoye;
     }
 
 }

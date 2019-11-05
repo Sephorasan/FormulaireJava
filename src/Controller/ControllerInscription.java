@@ -11,14 +11,10 @@ public class ControllerInscription implements EventHandler<MouseEvent> {
 
 
         private ViewHandler launcher;
-        private BooleanProperty isNewRegisterClicked, isLoginClicked;
 
         public ControllerInscription(ViewHandler launcher) {
         this.launcher = launcher;
         this.launcher.setEventHandlerInscription(this);
-
-        this.isNewRegisterClicked = new SimpleBooleanProperty(false);
-        this.isLoginClicked = new SimpleBooleanProperty(false);
 
     }
 
@@ -26,10 +22,9 @@ public class ControllerInscription implements EventHandler<MouseEvent> {
         public void handle(MouseEvent event) {
         if (event.getSource().equals(launcher.getVi().getInscription())
                 && event.getEventType().equals(MouseEvent.MOUSE_CLICKED)) {
-            isNewRegisterClicked.set(true);
+                launcher.setVueConnexion();
         } else if (event.getSource().equals(launcher.getVc().getConnexion())
                 && event.getEventType().equals(MouseEvent.MOUSE_CLICKED)) {
-            isLoginClicked.set(true);
         }
     }
 }
