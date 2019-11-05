@@ -6,6 +6,7 @@ import Controller.ControllerInscription;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class ViewHandler extends Application {
@@ -21,7 +22,7 @@ public class ViewHandler extends Application {
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
         Group root = new Group();
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root, Color.GREY);
 
 
         vi = new ViewInscription(root);

@@ -43,61 +43,61 @@ public class ViewInscription {
     private void Form() {
 
          Inscription = new Text("Inscription");
-         Inscription.setLayoutX(350);
-         Inscription.setLayoutY(100);
+         Inscription.setLayoutX(650);
+         Inscription.setLayoutY(200);
 
          NomLabel = new Label("Nom :");
          NomField = new TextField();
-         NomLabel.setLayoutX(150); //horizontale
+         NomLabel.setLayoutX(550); //horizontale
          NomLabel.setLayoutY(300); //verticale
-         NomField.setLayoutX(200);
+         NomField.setLayoutX(600);
          NomField.setLayoutY(300);
 
          PrenomLabel = new Label("Prenom :");
          PrenomField = new TextField();
-         PrenomLabel.setLayoutX(130);
+         PrenomLabel.setLayoutX(530);
          PrenomLabel.setLayoutY(350);
-         PrenomField.setLayoutX(200);
+         PrenomField.setLayoutX(600);
          PrenomField.setLayoutY(350);
 
          AdresseLabel = new Label("Adresse :");
          AdresseField = new TextField();
-         AdresseLabel.setLayoutX(130);
+         AdresseLabel.setLayoutX(530);
          AdresseLabel.setLayoutY(400);
-         AdresseField.setLayoutX(200);
+         AdresseField.setLayoutX(600);
          AdresseField.setLayoutY(400);
 
 
          CPLabel = new Label("Code postal :");
          CPField = new TextField();
-         CPLabel.setLayoutX(110);
+         CPLabel.setLayoutX(510);
          CPLabel.setLayoutY(450);
-         CPField.setLayoutX(200);
+         CPField.setLayoutX(600);
          CPField.setLayoutY(450);
 
          EmailLabel = new Label("Adresse e-mail :");
          EmailField = new TextField();
-         EmailLabel.setLayoutX(90);
+         EmailLabel.setLayoutX(490);
          EmailLabel.setLayoutY(500);
-         EmailField.setLayoutX(200);
+         EmailField.setLayoutX(600);
          EmailField.setLayoutY(500);
 
          PseudoLabel = new Label("Pseudo :");
          PseudoField = new TextField();
-         PseudoLabel.setLayoutX(120);
+         PseudoLabel.setLayoutX(520);
          PseudoLabel.setLayoutY(550);
-         PseudoField.setLayoutX(200);
+         PseudoField.setLayoutX(600);
          PseudoField.setLayoutY(550);
 
          MDPLabel = new Label("Mot de passe :");
          MDPField = new PasswordField();
-         MDPLabel.setLayoutX(100);
+         MDPLabel.setLayoutX(500);
          MDPLabel.setLayoutY(600);
-         MDPField.setLayoutX(200);
+         MDPField.setLayoutX(600);
          MDPField.setLayoutY(600);
 
-        BoutonEnvoye = new Button("Validé");
-        BoutonEnvoye.setLayoutX(150);
+        BoutonEnvoye = new Button("Valider");
+        BoutonEnvoye.setLayoutX(650);
         BoutonEnvoye.setLayoutY(650);
 
     }

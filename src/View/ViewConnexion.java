@@ -10,7 +10,6 @@ import javafx.scene.text.Text;
 
 public class ViewConnexion {
     private Group root;
-    private Button connexion;
     private Text Connexion;
     private Label PseudoLabel;
     private TextField PseudoField;
@@ -25,30 +24,31 @@ public class ViewConnexion {
     private void Connexion(){
 
         Connexion = new Text("Connexion");
-        Connexion.setLayoutX(350);
-        Connexion.setLayoutY(100);
+        Connexion.setLayoutX(650);
+        Connexion.setLayoutY(200);
 
         PseudoLabel = new Label("Identifiant :");
         PseudoField = new TextField();
-        PseudoLabel.setLayoutX(120);
-        PseudoLabel.setLayoutY(550);
-        PseudoField.setLayoutX(200);
-        PseudoField.setLayoutY(550);
+        PseudoLabel.setLayoutX(520);
+        PseudoLabel.setLayoutY(300);
+        PseudoField.setLayoutX(600);
+        PseudoField.setLayoutY(300);
 
         MDPLabel = new Label("Mot de passe :");
         MDPField = new PasswordField();
-        MDPLabel.setLayoutX(100);
-        MDPLabel.setLayoutY(600);
-        MDPField.setLayoutX(200);
-        MDPField.setLayoutY(600);
+        MDPLabel.setLayoutX(500);
+        MDPLabel.setLayoutY(350);
+        MDPField.setLayoutX(600);
+        MDPField.setLayoutY(350);
 
         BoutonConnexion = new Button("Connexion");
-        BoutonConnexion.setLayoutX(150);
-        BoutonConnexion.setLayoutY(650);
+        BoutonConnexion.setLayoutX(650);
+        BoutonConnexion.setLayoutY(450);
     }
 
     void setVueConnexion(){
         root.getChildren().clear();
+        root.getChildren().add(Connexion);
         root.getChildren().add(PseudoLabel);
         root.getChildren().add(PseudoField);
         root.getChildren().add(MDPLabel);
