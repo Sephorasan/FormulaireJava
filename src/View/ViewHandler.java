@@ -11,10 +11,13 @@ import javafx.stage.Stage;
 public class ViewHandler extends Application {
     private Stage primaryStage;
     private ViewInscription vi;
-    /*private ViewConnexion vc;
+    private ViewConnexion vc;
+    /*
     private ViewInformation vf;
     private ControllerConnexion cc;
+    */
     private ControllerInscription ci;
+    /*
     private ControllerInformation cf;*/
 
     @Override
@@ -25,14 +28,19 @@ public class ViewHandler extends Application {
 
 
         vi = new ViewInscription(root);
-        /*
         vc = new ViewConnexion(root);
+        ci = new ControllerInscription(this);
+        /*
         vf = new ViewInformation(root);
 
         cc = new ControllerConnexion(this);
-        ci = new ControllerInscription(this);
+        */
+         /*
+
         cf = new ControllerInformation(this);
-         */
+
+          */
+
 
         AffichInscription();
         primaryStage.setTitle("Formulaire");
@@ -45,25 +53,26 @@ public class ViewHandler extends Application {
     public void AffichInscription() {
         vi.setVueInscription();
     }
-    /*
+
     public void AffichConnexion(){
         vc.setVueConnexion();
     }
-
-    public void AffichInformation(){
-        vf.setVueInformation();
-    }
-    */
+    /*
+        public void AffichInformation(){
+            vf.setVueInformation();
+        }
+        */
     public Stage getPrimaryStage() {
         return primaryStage;
     }
     public ViewInscription getVi() {
         return vi;
     }
-    /*
+
     public ViewConnexion getVc() {
         return vc;
     }
+    /*
     public ViewInformation getVf() { return vf; }
     }
     */
